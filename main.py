@@ -5,7 +5,7 @@ import tkinter as tk
 def shutdown():
   os.system("poweroff")
   
-def reeboot():
+def restart():
   os.system("reboot")
 root = tkinter.Tk()
 root.resizable(height=None, width=None)
@@ -13,10 +13,10 @@ root.resizable(height=None, width=None)
 label = tk.Label(root, text="My First Tkinter program", bg="black", fg="white")
 label.pack()
 
-button_s = tk.Button(text="Shutdown", bg="white", fg="grey", command=os.system("poweroff"))
+button_s = tk.Button(text="Shutdown", bg="white", fg="grey", command= shutdown)
 button_s.pack()
 
-button_r = tk.Button(text="Reboot", bg="white", fg="grey", command=os.system("reboot"))
+button_r = tk.Button(text="Reboot", bg="white", fg="grey", command= restart)
 button_r.pack()
 
 button_quit = tk.Button(text="exit", bg="white", fg="grey", command=exit)
