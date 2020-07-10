@@ -2,6 +2,11 @@ import os
 import tkinter
 import tkinter as tk
 
+def shutdown():
+  os.system("poweroff")
+  
+def reeboot():
+  os.system("reboot")
 root = tkinter.Tk()
 root.resizable(height=None, width=None)
 
